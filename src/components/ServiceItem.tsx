@@ -1,9 +1,15 @@
-export function ServiceItem() {
+interface IServiceItem {
+    image: string
+    title: string
+    description: string
+}
+
+export function ServiceItem( { image, title, description }: IServiceItem ) {
     return (
         <div>
-            <img src="src/assets/images/services/service1.png" alt="" />
-            <h3>Web Design</h3>
-            <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
+            <img src={image} alt="" />
+            <h3>{title}</h3>
+            <p>{description}</p>
         </div>
     )
 }

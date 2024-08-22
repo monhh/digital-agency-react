@@ -7,6 +7,7 @@ import userIcon from './assets/images/icons/user.svg';
 import trophyIcon from './assets/images/icons/trophy.svg';
 
 import { ServiceItem } from './components/ServiceItem';
+import serviceImage from './assets/images/services/service1.png';
 
 function App() {
 	return (
@@ -65,7 +66,11 @@ function App() {
 							<p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
 							<a href="">Learn More</a>
 						</div>  */}
-						<ServiceItem />
+						<ServiceItem 
+							image = {serviceImage} 
+							title = "Web Design"
+							description = "Description"
+						/>
 					</div>
 				</div>
 			</section>
