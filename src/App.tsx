@@ -6,6 +6,8 @@ import checkIcon from './assets/images/icons/check.svg';
 import userIcon from './assets/images/icons/user.svg';
 import trophyIcon from './assets/images/icons/trophy.svg';
 
+import { ServiceItem } from './components/ServiceItem';
+
 function App() {
 	return (
 		<>
@@ -45,7 +47,7 @@ function App() {
 				<div className="container">
 					<h2>The service we offer is specifically designed to meet your needs.</h2>
 					<div className="services-list">
-						<div className="service-item">
+						{/* <div className="service-item">
 							<img src="src/assets/images/services/service1.png" alt=""	/>
 							<h3>Web Design</h3>
 							<p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
@@ -62,7 +64,8 @@ function App() {
 							<h3>Web Design</h3>
 							<p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
 							<a href="">Learn More</a>
-						</div> 
+						</div>  */}
+						<ServiceItem />
 					</div>
 				</div>
 			</section>
