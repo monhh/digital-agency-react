@@ -1,19 +1,18 @@
 import './App.css'
 
-import logo from './assets/images/logo.png';
-import heroImage from './assets/images/hero.svg';
-import checkIcon from './assets/images/icons/check.svg';
-import userIcon from './assets/images/icons/user.svg';
-import trophyIcon from './assets/images/icons/trophy.svg';
 
-import { ServiceItem } from './components/ServiceItem';
-import serviceImage from './assets/images/services/service1.png';
+
+import { Nav } from './components/Nav';
+import { Hero } from './components/Hero';
+import { Services } from './components/Services';
+import { Strategy } from './components/Strategy';
+import { Team } from './components/Team';
 
 function App() {
 	return (
 		<>
 		<main>
-			<nav>
+			{/* <nav>
 				<div className="container nav-container">
 					<div className="logo">
 						<img src={logo} alt="" />
@@ -29,8 +28,9 @@ function App() {
 						<span className="btn-nav" id="btn-close">Close</span>
 					</ul>
 				</div>
-			</nav>
-			<section className="hero">
+			</nav> */}
+			<Nav />
+			{/* <section className="hero">
 				<div className="container hero-container">
 					<div className="left">
 						<h1>A digital agency specializing on <span> mobile design</span></h1>
@@ -43,29 +43,12 @@ function App() {
 						<img src={heroImage} alt="Hero image" />
 					</div>
 				</div>
-			</section>
-			<section className="services">
+			</section> */}
+			<Hero />
+			{/* <section className="services">
 				<div className="container">
 					<h2>The service we offer is specifically designed to meet your needs.</h2>
 					<div className="services-list">
-						{/* <div className="service-item">
-							<img src="src/assets/images/services/service1.png" alt=""	/>
-							<h3>Web Design</h3>
-							<p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
-							<a href="">Learn More</a>
-						</div>
-						<div className="service-item">
-							<img src="src/assets/images/services/service2.png" alt=""	/>
-							<h3>Web Design</h3>
-							<p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
-							<a href="">Learn More</a>
-						</div>
-						<div className="service-item">
-							<img src="src/assets/images/services/service3.png" alt=""	/>
-							<h3>Web Design</h3>
-							<p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget. Fusce dapibus tellus.</p>
-							<a href="">Learn More</a>
-						</div>  */}
 						<ServiceItem 
 							image = {serviceImage} 
 							title = "Web Design"
@@ -73,8 +56,9 @@ function App() {
 						/>
 					</div>
 				</div>
-			</section>
-			<section className="strategy">
+			</section> */}
+			<Services />
+			{/* <section className="strategy">
 				<div className="container strategy-container">
 					<div className="left">
 						<h2>Here are 3 working steps to organize our projects.</h2>
@@ -114,8 +98,9 @@ function App() {
 						</div>                 
 					</div>
 				</div>
-			</section>
-			<section className="team">
+			</section> */}
+			<Strategy />
+			{/* <section className="team">
 				<div className="container team-container">
 					<div className="info">
 						<h2>We are proud of our design team</h2>
@@ -199,7 +184,8 @@ function App() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
+			<Team />
 			<section className="projects">
 				<h2>Check out some of our awesome projects with creative ideas and great design. </h2>
 				<div className="container projects-container">

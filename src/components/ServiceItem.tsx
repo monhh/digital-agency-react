@@ -1,8 +1,4 @@
-interface IServiceItem {
-    image: string
-    title: string
-    description: string
-}
+import { IServiceItem } from "../types/ServiceItem";
 
 export function ServiceItem( { image, title, description }: IServiceItem ) {
     return (
@@ -10,6 +6,7 @@ export function ServiceItem( { image, title, description }: IServiceItem ) {
             <img src={image} alt="" />
             <h3>{title}</h3>
             <p>{description}</p>
+            <a href="">Learn More</a>
         </div>
     )
 }
