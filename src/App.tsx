@@ -7,6 +7,10 @@ import { Hero } from './components/Hero';
 import { Services } from './components/Services';
 import { Strategy } from './components/Strategy';
 import { Team } from './components/Team';
+import { Projects } from './components/Projects';
+import { Testimonials } from './components/Testimonials';
+import { FAQS } from './components/FAQS';
+import { Footer } from './components/Footer';
 
 function App() {
 	return (
@@ -186,7 +190,7 @@ function App() {
 				</div>
 			</section> */}
 			<Team />
-			<section className="projects">
+			{/* <section className="projects">
 				<h2>Check out some of our awesome projects with creative ideas and great design. </h2>
 				<div className="container projects-container">
 					<div className="project">
@@ -199,14 +203,10 @@ function App() {
 						<h3>nombre del proyecto</h3>
 						<p>categoria</p>
 					</div> 
-					{/* <div className="project">
-						<img src="src/assets/images/projects/project3.jpg" alt="" />
-						<h3>nombre del proyecto</h3>
-						<p>categoria</p>
-					</div> */}
 				</div>
-			</section>
-			<section className="testimonials">
+			</section> */}
+			<Projects />
+			{/* <section className="testimonials">
 				<div className="container">
 					<h2>Don't take our word for it. See what customers are saying about us.</h2>
 					<div className="testimonials-list">
@@ -302,8 +302,9 @@ function App() {
 						</div>           
 					</div>
 				</div>
-			</section>
-			<section className="faqs">
+			</section> */}
+			<Testimonials />
+			{/* <section className="faqs">
 				<div className="container faqs-container">
 					<div className="left">
 						<h2>If you don't see an answer to your question, you can send us an email from our contact form.</h2>
@@ -357,15 +358,17 @@ function App() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
+			<FAQS />
 		</main>
 
-		<footer>
+		{/* <footer>
 			<div className="container footer-container">
 				<h2>Join our community by using our services and grow your business.</h2>
 				<a href="" className="btn-primary">Try it for free</a>
 			</div>
-		</footer>
+		</footer> */}
+		<Footer />
 		</>
 	)
 }
